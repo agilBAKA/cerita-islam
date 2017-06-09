@@ -2,14 +2,59 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="content-language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index,nofollow" />
+    <meta name="copyright" content="Copyright © 2017" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" content="notranslate" />
 	<title>Cerita Islam - Beranda</title>
 	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Source+Sans+Pro" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="../../dist/css/style.css">
 </head>
 <body>
-	<h1>HELLO</h1>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis suscipit, expedita sapiente atque dolor reprehenderit libero rerum quod. Veniam necessitatibus, temporibus facere. Sed corporis, voluptatibus sit placeat delectus sapiente est.
-	</p>
+	<nav class="navigasi" role="navigation">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2">
+					<a href="" class="logo">
+						<img src="../../dist/images/logo.png" alt="">
+					</a>
+				</div>
+				<div class="col-md-10">
+					<div class="menu">
+						<ul>
+							<li><a href="">Beranda</a></li>
+							<li><a href="">Profil</a></li>
+							<li><a href="">Cerita</a></li>
+							<li><a href="">Komik</a></li>
+							<li><a href="">Kontak</a></li>
+						</ul>
+					</div>
+				</div>
+				<button class="btn-responsive">
+					menu
+				</button>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				ini navigasi
+			</div>
+		</div>
+	</div>
+	<div style="height: 1000px;"></div>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('.btn-responsive').on('click', function(){
+				$('.menu').toggleClass('menu-show');
+			});
+		})
+	</script>
 </body>
 </html>
