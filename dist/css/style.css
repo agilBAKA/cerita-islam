@@ -9,10 +9,16 @@ body {
 	font-size: 14px;
 	line-height: 1.4;
 	background-color: #f7f9f9;
+	padding-top: 60px;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Patrick Hand SC', cursive;
+}
+
+section {
+	padding-bottom: 25px;
+	border-bottom: 1px solid #ddd;
 }
 
 /*================ NAVIGASI ==============*/
@@ -24,6 +30,7 @@ nav.navigasi {
 	width: 100%;
 	left: 0px;
 	top: 0px;
+	z-index: 100;
 }
 
 a.logo {
@@ -47,8 +54,8 @@ a.logo img { width: 150px }
 	padding: 15px 15px;
 	color: #3a3a3a;
 	font-size: 16px;
-	 transition:all 0.3s;
-	 text-decoration: none;
+	transition:max-height 0.7s;
+	text-decoration: none;
 }
 
 .menu ul li a:hover {
@@ -59,6 +66,9 @@ a.logo img { width: 150px }
  	display: none;
  }
 
+
+
+
 @media (max-width: 480px) {
 	.menu {
 		position: fixed;
@@ -68,7 +78,8 @@ a.logo img { width: 150px }
 		background: #fff;
 		max-height: 0px;
 		overflow: hidden;
- 		transition: max-height 0.3s;
+ 		transition: max-height 0.7s;
+ 		z-index: 100;
 	} 
 
 	.menu-show {
@@ -85,7 +96,7 @@ a.logo img { width: 150px }
 	}
 	.menu ul li a {
 		border-top: 1px solid #ddd;
-		text-align: right;
+		text-align: center;
 	}
 	
 
@@ -95,4 +106,47 @@ a.logo img { width: 150px }
 	 	right: 15px;
 	 	top: 15px;
 	 }
+}
+
+
+
+
+/*================ KONTEN ==============*/ 
+
+
+.slider img{
+	max-width: 100%;
+}
+
+.kartu{
+	text-align: center;
+	display: block;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.kartu img{
+	width: 100%;
+}
+
+.kartu span{
+	position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    background-color: rgba(221, 221, 221, 0.78);
+    padding: 6px;
+    color: #3a3a3a;
+    font-size: 16px;
+}
+
+
+
+
+/*================ FOOTER ==============*/
+
+.copyright{
+	display: block;
+	padding-top: 15px;
+	text-align: center;
 }
